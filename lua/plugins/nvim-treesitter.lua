@@ -1,8 +1,14 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  opts = function(_, opts)
-    if type(opts.ensure_installed) == "table" then
-      vim.list_extend(opts.ensure_installed, { "ron", "rust", "toml" })
-    end
-  end,
+  opts = {
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = "<CR>",
+        node_incremental = "<CR>",
+        scope_incremental = false,
+        node_decremental = "<bs>",
+      },
+    },
+  },
 }
