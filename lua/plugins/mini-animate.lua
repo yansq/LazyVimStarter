@@ -1,9 +1,18 @@
 return {
   "echasnovski/mini.animate",
+  cursor = {
+    enable = true,
+  },
   scroll = {
-    enable = false,
+    enable = true,
   },
   resize = {
-    enable = false,
+    enable = true,
+  },
+  open = {
+    enable = true,
+  },
+  close = {
+    enable = true,
   },
 }
