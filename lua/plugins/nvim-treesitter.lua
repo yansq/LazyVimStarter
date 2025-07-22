@@ -1,6 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
+    ensure_installed = { "astro", "css" },
     incremental_selection = {
       enable = true,
       keymaps = {
