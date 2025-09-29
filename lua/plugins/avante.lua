@@ -4,10 +4,11 @@ return {
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
+    provider = "openai",
     providers = {
       openai = {
         endpoint = "https://aihubmix.com/v1",
-        model = "claude-3-5-sonnet-20241022",
+        model = "claude-sonnet-4-20250514",
         max_tokens = 4096,
         extra_request_body = {
           tempurature = 0,
